@@ -1,0 +1,25 @@
+﻿@model IEnumerable<passion_suyeonjang.Models.JourneyDto>
+@{
+    int index = 1; 
+}
+@{ ViewBag.Title = "List"; }
+
+<h2>Journey List</h2>
+
+<div>
+
+    <table id="journeyTable">
+        <tbody>
+            @foreach (passion_suyeonjang.Models.JourneyDto Journey in Model)
+            {
+                <tr>
+                    <td><b>@index</b></td>
+                    <td>@Journey.JourneyTitle</td>
+                    <td><button>수정</button></td>
+                    <td><button>삭제</button></td>
+                </tr>
+                index++;
+            }
+        </tbody>
+    </table>
+</div>
