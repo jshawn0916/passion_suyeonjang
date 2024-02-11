@@ -17,7 +17,7 @@ namespace passion_suyeonjang.Models
         public string TravelerLastName { get; set; }
         public string TravelerEmail { get; set; }
 
-        //a traveler has many journeys
+        //A traveler can take care of many journeys
         public ICollection<Journeys> Journeys { get; set; }
 
         public class TravelerDto

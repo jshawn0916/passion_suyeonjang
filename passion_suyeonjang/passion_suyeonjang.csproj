@@ -186,6 +186,8 @@
     <Compile Include="Controllers\JourneyController.cs" />
     <Compile Include="Controllers\JourneyDataController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TravelerController.cs" />
+    <Compile Include="Controllers\TravelerDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -224,6 +226,10 @@
     <Compile Include="Migrations\202402090539159_journeydatacontroller.cs" />
     <Compile Include="Migrations\202402090539159_journeydatacontroller.designer.cs">
       <DependentUpon>202402090539159_journeydatacontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402110406018_travelerdatajoin.cs" />
+    <Compile Include="Migrations\202402110406018_travelerdatajoin.designer.cs">
+      <DependentUpon>202402110406018_travelerdatajoin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -313,6 +319,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Traveler\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -368,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402090539159_journeydatacontroller.resx">
       <DependentUpon>202402090539159_journeydatacontroller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402110406018_travelerdatajoin.resx">
+      <DependentUpon>202402110406018_travelerdatajoin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
